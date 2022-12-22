@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" href="img/logo.webp">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
+    <title>Fasion Store</title>
+</head>
+
+<body>
+
+    <header class="inicio" id="inicio">
+        <div class="inicio_contenedor">
+            <div class="header" id="header_des">
+                <div class="logo">
+                    <a href="#">FStore</a>
+                </div>
+
+                <nav class="nav_desktop">
+                    <ul class="lista">
+                        <button class="carrito"><img src="img/carr.png" alt=""></button>
+                        <li class="item"><a href="#" class="link">Home</a></li>
+                        <li class="item"><a href="#" class="link">About</a></li>
+                        <li class="item"><a href="#productos" class="link">Products</a></li>
+                        <li class="item"><a href="#skills" class="link">Skills</a></li>
+                        <li class="item"><a href="#contacto" class="link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="iconos_menu">
+                    <button class="carrito_mob"><img src="img/carr.png" alt=""></button>
+                    <i class="fa-solid fa-bars" id="abrir_menu"></i>
+                </div>
+            </div>
+
+            <div class="header_mob disabled" id="header_mob">
+                <div class="logo_mob">
+                    <a href="#">FStore</a>
+
+                    <i class="fa-solid fa-xmark" id="close"></i>
+                </div>
+
+                <nav class="nav_mob">
+                    <ul class="lista_mob">
+                        <li class="item_mob"><a href="#" class="link_mob">Home</a></li>
+                        <li class="item_mob"><a href="#" class="link_mob">About</a></li>
+                        <li class="item_mob"><a href="#productos" class="link_mob">Products</a></li>
+                        <li class="item_mob"><a href="#skills" class="link_mob">Skills</a></li>
+                        <li class="item_mob"><a href="#contacto" class="link_mob">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="iconos_menu_mob">
+                    
+                </div>
+            </div>
+
+            <div class="intro">
+                <h2 class="title" data-aos="zoom-in">Lorem ipsum dolor sit</h2>
+                <p class="para" data-aos="zoom-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis <br>vero incidunt
+                    assumenda cumque
+                    beatae quia!</p>
+                <a href="#" class="enla" data-aos="zoom-in">Lorem, ipsum.</a>
+            </div>
+            <div class="imagen_inicio">
+                <img src="img/ilustra.png" alt="">
+            </div>
+        </div>
+    </header>
+
+
+    <section class="products" id="productos">
+        <h1 class="products_title" data-aos="zoom-in">Products</h1>
+        <div class="cajas">
+
+            <div class="category_list" data-aos="zoom-in">
+                <button class="category_item ct_item-active" category="all">Todos</button>
+                <button class="category_item" category="camisas">Camisas</button>
+                <button class="category_item" category="jeans">Jeans</button>
+                <button class="category_item" category="bermudas">Bermudas</button>
+                <button class="category_item" category="zapatos">Zapatos</button>
+            </div>
+
+            <div class="products_list">
+                <div class="product_item" category="camisas" >
+                    <div class="imagen">
+                        <img src="img/buso.png" alt="">
+                    </div>
+
+                    <div class="contenedor">
+                        <div class="pago">
+                            <a href="#">Buso</a>
+                            <p>$ <span>100.000</span></p>
+                            <div class="ic">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="iconos">
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product_item" category="jeans">
+                    <div class="imagen">
+                        <img src="img/jean.png" alt="">
+                    </div>
+
+                    <div class="contenedor">
+                        <div class="pago">
+                            <a href="#">Jeans</a>
+                            <p>$ <span>80.000</span></p>
+                            <div class="ic">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="iconos">
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product_item" category="bermudas">
+                    <div class="imagen">
+                        <img src="img/bermuda.png" alt="">
+                    </div>
+
+                    <div class="contenedor">
+                        <div class="pago">
+                            <a href="#">Bermuda</a>
+                            <p>$ <span>70.000</span></p>
+                            <div class="ic">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="iconos">
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product_item" category="zapatos">
+                    <div class="imagen">
+                        <img src="img/adidas_yezzi.png" alt="">
+                    </div>
+
+                    <div class="contenedor">
+                        <div class="pago">
+                            <a href="#">Adidas Yezzy</a>
+                            <p>$ <span>150.000</span></p>
+                            <div class="ic">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="iconos">
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product_item" category="camisas">
+                    <div class="imagen">
+                        <img src="img/buso1.png" alt="">
+                    </div>
+
+                    <div class="contenedor">
+                        <div class="pago">
+                            <a href="#">Buso Invierno</a>
+                            <p>$ <span>120.000</span></p>
+                            <div class="ic">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="iconos">
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product_item" category="zapatos">
+                    <div class="imagen">
+                        <img src="img/adidas_sneakers.png" alt="">
+                    </div>
+
+                    <div class="contenedor">
+                        <div class="pago">
+                            <a href="#">Adidas Sneakers</a>
+                            <p>$ <span>200.000</span></p>
+                            <div class="ic">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="iconos">
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product_item" category="jeans">
+                    <div class="imagen">
+                        <img src="img/jean1.png" alt="">
+                    </div>
+
+                    <div class="contenedor">
+                        <div class="pago">
+                            <a href="#">Jeans Oscuros</a>
+                            <p>$ <span>90.000</span></p>
+                            <div class="ic">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="iconos">
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product_item" category="bermudas">
+                    <div class="imagen">
+                        <img src="img/bermuda1.png" alt="">
+                    </div>
+
+                    <div class="contenedor">
+                        <div class="pago">
+                            <a href="#">Bermuda Negra</a>
+                            <p>$ <span>45.000</span></p>
+                            <div class="ic">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="iconos">
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product_item" category="camisas">
+                    <div class="imagen">
+                        <img src="img/camisa.png" alt="">
+                    </div>
+
+                    <div class="contenedor">
+                        <div class="pago">
+                            <a href="#">Camisa</a>
+                            <p>$ <span>60.000</span></p>
+                            <div class="ic">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="iconos">
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product_item" category="camisas">
+                    <div class="imagen">
+                        <img src="img/T-shirt.png" alt="">
+                    </div>
+
+                    <div class="contenedor">
+                        <div class="pago">
+                            <a href="#">T-shirt</a>
+                            <p>$ <span>90.000</span></p>
+                            <div class="ic">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="iconos">
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product_item" category="jeans">
+                    <div class="imagen">
+                        <img src="img/sudaderas.png" alt="">
+                    </div>
+
+                    <div class="contenedor">
+                        <div class="pago">
+                            <a href="#">Sudaderas</a>
+                            <p>$ <span>30.000</span></p>
+                            <div class="ic">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="iconos">
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product_item" category="zapatos">
+                    <div class="imagen">
+                        <img src="img/tenni.png" alt="">
+                    </div>
+
+                    <div class="contenedor">
+                        <div class="pago">
+                            <a href="#">Nike Zoom</a>
+                            <p>$ <span>150.000</span></p>
+                            <div class="ic">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="iconos">
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonios" id="skills">
+        <div class="contenedor_testimonios">
+            <div class="titulos" data-aos="zoom-in">
+                <h2 class="h2">Lorem ipsum dolor</h2>
+                <p class="p">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="contenido owl-carousel">
+                <div class="testi">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste amet dolores provident earum
+                        veniam, saepe expedita harum quod in modi Lorem</p>
+                    <div class="info_cliente">
+                        <div class="cliente">
+                            <a href="#">
+                                <img src="img/cr7.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="detalles_clientes">
+                            <h6>Lorem, ipsum.</h6>
+                            <span>Lorem ipsum dolor sit.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste amet dolores provident earum
+                        veniam, saepe expedita harum quod in modi Lorem</p>
+                    <div class="info_cliente">
+                        <div class="cliente">
+                            <a href="#">
+                                <img src="img/cr7.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="detalles_clientes">
+                            <h6>Lorem, ipsum.</h6>
+                            <span>Lorem ipsum dolor sit.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste amet dolores provident earum
+                        veniam, saepe expedita harum quod in modi Lorem</p>
+                    <div class="info_cliente">
+                        <div class="cliente">
+                            <a href="#">
+                                <img src="img/cr7.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="detalles_clientes">
+                            <h6>Lorem, ipsum.</h6>
+                            <span>Lorem ipsum dolor sit.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste amet dolores provident earum
+                        veniam, saepe expedita harum quod in modi Lorem</p>
+                    <div class="info_cliente">
+                        <div class="cliente">
+                            <a href="#">
+                                <img src="img/cr7.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="detalles_clientes">
+                            <h6>Lorem, ipsum.</h6>
+                            <span>Lorem ipsum dolor sit.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="destacados" id="destacados">
+        <h1 class="title_desta" data-aos="zoom-in">Lorem, ipsum</h1>
+        <div class="caja_desta" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
+            <div class="item_desta">
+                <i class="fa-solid fa-truck-fast icon"></i>
+                <h6 class="descri_desta">Lorem ipsum dolor sit</h6>
+                <p class="text_desta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, modi.</p>
+            </div>
+            <div class="item_desta" data-aos="fade-right">
+                <i class="fa-solid fa-truck-fast icon"></i>
+                <h6 class="descri_desta">Lorem ipsum dolor sit</h6>
+                <p class="text_desta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, modi.</p>
+            </div>
+            <div class="item_desta" data-aos="fade-right">
+                <i class="fa-solid fa-truck-fast icon"></i>
+                <h6 class="descri_desta">Lorem ipsum dolor sit</h6>
+                <p class="text_desta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, modi.</p>
+            </div>
+            <div class="item_desta" data-aos="fade-right">
+                <i class="fa-solid fa-truck-fast icon"></i>
+                <h6 class="descri_desta">Lorem ipsum dolor sit</h6>
+                <p class="text_desta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, modi.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h1 class="title_contacto" data-aos="zoom-in">Contact us</h1>
+        <div class="contenedor_contacto" data-aos="fade-right">
+            <div class="conte-imagen">
+                <img src="img/fondo-mb.png" alt="">
+            </div>
+            
+            <form action="" name="form">
+                <input type="text" placeholder="Name...">
+                <input type="text" placeholder="Username...">
+                <input type="text" placeholder="Tem...">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message..."></textarea>
+            </form>
+        </div>
+        <div class="boton1" data-aos="fade-right">
+            <button type="submit" for="form" class="boton">Submit</button>
+        </div>
+        
+    </section>
+
+    <footer class="pie">
+        <div class="pies_arriba">
+            <a href="#inicio"><i class="fa-solid fa-chevron-up"></i></a>
+        </div>
+        <div class="contenedor_pie">
+            <div class="logo_pie">
+                <a href="#" class="loguito">FStore</a>
+            </div>
+            <div class="listas_p">
+                <ul class="listas_pie">
+                    <h4 class="h4"><i class="fa-solid fa-fire"></i> lorem</h4>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+                <ul class="listas_pie">
+                    <h4 class="h4"><i class="fa-solid fa-location-dot"></i> lorem</h4>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                </ul>
+            </div>
+            
+            <div class="contac_pie">
+                <div class="location">
+                    <p><i class="fa-solid fa-location-dot"></i> Ubicate in <span>Lorem, ipsum</span></p>
+                    <p><i class="fa-solid fa-location-dot"></i> Very thans for you visited</p>
+                </div>
+                <div class="redes">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="contac_in">
+                    <input type="text" placeholder="correo">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="creditos">
+            <p>Developed by <a href="https://www.facebook.com/profile.php?id=100019093819038">Gabriel Meza</a></p>
+            <p>&copy; All rights reserved - 2022</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.js"
+        integrity="sha512-NMtENEqUQ8zHZWjwLg6/1FmcTWwRS2T5f487CCbQB3pQwouZfbrQfylryimT3XvQnpE7ctEKoZgQOAkWkCW/vg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        AOS.init();
+
+        $(document).ready(function () {
+            $('.contenido').owlCarousel({
+                loop: true,
+                nav: false,
+                dots: true,
+                margin: 50,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 800,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 2
+                    }
+                }
+            })
+        });
+    
+    </script>
+
+</body>
+
+</html>
